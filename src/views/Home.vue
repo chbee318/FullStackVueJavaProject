@@ -23,7 +23,7 @@ export default {
   components: {
     SideMenu,
     Header,
-  },
+  }
 };
 </script>
 <style scoped>
@@ -67,4 +67,5 @@ body > .el-container {
 .el-container:nth-child(7) .el-aside {
   line-height: 320px;
 }
+
 </style>

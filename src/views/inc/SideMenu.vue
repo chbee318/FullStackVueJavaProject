@@ -10,9 +10,9 @@
           <el-icon><message /></el-icon>System Management
         </template>
         <el-menu-item-group>
-          <el-menu-item index="1-1"><router-link to="/settings">User Settings</router-link></el-menu-item>
-          <el-menu-item index="1-2"><router-link to="/roles">User Roles Management</router-link></el-menu-item>
-          <el-menu-item index="1-3"><router-link to="/lists">User Lists</router-link></el-menu-item>
+          <el-menu-item index="1-1"><router-link to="/sys/settings">User Settings</router-link></el-menu-item>
+          <el-menu-item index="1-2"><router-link to="/sys/roles">User Roles Management</router-link></el-menu-item>
+          <el-menu-item index="1-3"><router-link to="/sys/lists">User Lists</router-link></el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
       <el-sub-menu index="2">
@@ -20,7 +20,7 @@
           <el-icon><icon-menu /></el-icon>Management Tool
         </template>
         <el-menu-item-group>
-          <el-menu-item index="2-1"><router-link to="/dictionaries">Math Dictionary</router-link></el-menu-item>
+          <el-menu-item index="2-1"><router-link to="/sys/dictionaries">Math Dictionary</router-link></el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
     </el-menu>
@@ -35,5 +35,8 @@ export default {
 .el-sub-menu {
   background-color: cadetblue;
   font-weight: bold;
+}
+a{
+ text-decoration: none; 
 }
 </style>

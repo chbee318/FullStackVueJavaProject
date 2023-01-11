@@ -18,22 +18,27 @@ const routes = [
         component: Index
       },
       {
-        path: '/settings',
+        path: '/userCenter',
+        name: 'UserCenter',
+        component: () => import('../views/UserCenter.vue')
+      },
+      {
+        path: 'sys/settings',
         name: 'Settings',
         component: Settings
       },
       {
-        path: '/roles',
+        path: 'sys/roles',
         name: 'Roles',
         component: Roles
       },
       {
-        path: '/lists',
+        path: 'sys/lists',
         name: 'Lists',
         component: Lists
       },
       {
-        path: '/dictionaries',
+        path: 'sys/dictionaries',
         name: 'Dictionaries',
         component: Dictionaries
       }
